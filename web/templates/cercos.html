@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles3.css' %}">
+    <script src="https://kit.fontawesome.com/0458944bda.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="containernav logo-nav-container">
+            <a href="#" class="logo"><img src="{% static 'images/logo.png' %}" alt="" width="300" height="100px"></a>
+            <span class="menu-icon"><img class="iconmenu" src="{% static 'icons/list.png' %}" alt=""></span>
+        
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="productos">Productos</a></li>
+                    <li><a href="#clientes">Nuestros Cliente</a></li>
+                    <li><img src="{% static 'icons/contact.png' %}" width="30" height="30">
+                        &nbsp<label>serviciocliente@bitioperu.com</label><br>
+                        <img src="{% static 'icons/smartphone.png' %}" width="30" height="30">
+                        &nbsp<label>+1-829-395-2064</label></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor">
+		<main class="contenido">
+			<h2>Contenido</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis rutrum gravida. Aliquam vel nunc sit amet nibh aliquam sollicitudin eu vitae elit. Duis varius turpis est, at feugiat metus blandit non. Mauris est nunc, ullamcorper nec egestas at, faucibus ac ex. Cras gravida ut odio eget vulputate. Suspendisse ut nunc cursus, vulputate tortor id, mollis magna. Proin mattis euismod magna. Suspendisse mattis, nunc vitae mattis iaculis, elit massa facilisis magna, ac consequat magna lacus sit amet lectus. Suspendisse a lacinia est, a semper turpis. Phasellus lobortis eget nibh in scelerisque. Morbi feugiat volutpat nisl, vehicula commodo augue volutpat at. Aenean aliquet tristique diam. Aenean maximus, quam non sollicitudin efficitur, est sapien pharetra odio, eget aliquam justo urna eu eros. Donec nec tincidunt tortor.
+				<br><br>
+
+				Maecenas pharetra pretium quam ut posuere. Quisque luctus sem purus. Phasellus vel nibh sed erat interdum placerat eget a dui. Vivamus viverra pharetra congue. Sed pretium mi eu dui congue pulvinar. Donec felis risus, malesuada quis tristique faucibus, vestibulum non urna. Fusce nec orci pulvinar, blandit velit quis, finibus neque. Mauris malesuada metus eget ornare pellentesque. Nunc pharetra ante eget ullamcorper finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla maximus a dolor non condimentum. Suspendisse convallis ullamcorper justo.
+				<br><br>
+
+				Nullam ut erat sit amet elit ultricies tempor vel eget magna. Vivamus vitae diam purus. Fusce semper nisl a nulla congue feugiat. Maecenas et tincidunt felis, dapibus rhoncus sapien. Maecenas tortor tortor, sagittis ac mattis sed, ullamcorper et orci. Pellentesque quis mollis massa. Donec lacinia turpis sapien, eu tincidunt dui rutrum elementum. Maecenas dictum et metus eget aliquam. Sed imperdiet lacinia vulputate. Vivamus mauris arcu, faucibus pulvinar laoreet sed, scelerisque et dui.
+			</p>
+		</main>
+		<aside class="sidebar">
+			<img class="img"src="http://solucionesdps.com/wp-content/uploads/2018/04/sistemas-electricos-lima-peru.jpg" alt="">
+		</aside>
+	</div>
+    <footer>
+        <div class="container-footer-all">
+             <div class="container-body">
+                 <div class="colum1">
+                     <h1>Mas informacion de la compañia</h1>
+                     <p>Esta compañia se dedica a la venta de software integrado con un 
+                     conjunto de cosas que no se lo que estoy escribiendo, este 
+                     texto es solo para llenara informacion en el cuadro de informacion 
+                     de la compañia.</p>
+                 </div>
+                 <div class="colum2">
+                     <h1>Redes Sociales</h1>
+                     <div class="row">
+                         <img src="{% static 'icons/facebook.png' %}">
+                         <label>Siguenos en Facebook</label>
+                     </div>
+                     <div class="row">
+                         <img src="{% static 'icons/twitter.png' %}">
+                         <label>Siguenos en Twitter</label>
+                     </div>
+                     <div class="row">
+                         <img src="{% static 'icons/instagram.png' %}">
+                         <label>Siguenos en Instagram</label>
+                     </div>
+                     <div class="row">
+                         <img src="{% static 'icons/google-plus.png' %}">
+                         <label>Siguenos en Google Plus</label>
+                     </div>
+                     <div class="row">
+                         <img src="{% static 'icons/pinterest.png' %}">
+                         <label>Siguenos en Pinteres</label>
+                     </div>
+                 </div>
+                 <div class="colum3">
+                     <h1>Informacion Contactos</h1>
+                     <div class="row2">
+                         <img src="{% static 'icons/house.png' %}">
+                         <label>La Romana, 
+                         Republica Dominicana
+                         Manuel del Cabral
+                         Casa # 27</label>
+                     </div>
+                     <div class="row2">
+                         <img src="{% static 'icons/smartphone.png' %}">
+                         <label>+1-829-395-2064</label>
+                     </div>
+                     <div class="row2">
+                         <img src="{% static 'icons/contact.png' %}">
+                          <label>Cristiancedano1030@gmail.com</label>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="container-footer">
+                <div class="footer">
+                     <div class="copyright">
+                         © 2021 Todos los Derechos Reservados | <a href="">Bitio</a>
+                     </div>
+
+                     <div class="information">
+                         <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                     </div>
+                 </div>
+             </div>
+     </footer>
+</body>
+</html>

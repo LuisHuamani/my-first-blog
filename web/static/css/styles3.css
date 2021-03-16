@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+   
+    width: 100%;
+    align-items: center;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(161, 161, 161) 110%);
+}
+/* menu */
+  /*  header {
+    bottom: 87%;
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    margin-left: 0%;
+    position: fixed;
+    z-index: 9;
+}
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda 
+  margin-left: 17%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float 
+} 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding 
+  padding: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #ad3e3e;
+}*/
+/*nav nuevo*/
+.containernav {
+    width: 80%;
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 1.1rem; /*tamaño de las letras*/
+    line-height: 1.6em; /* interlineado */
+  }
+  
+  .header {
+    background: rgba(0,0,0,0.9);
+    color: white;
+    /*padding: 2rem 0;*/
+    z-index: 9;
+  
+    /* hacer el menu fijo */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* ocuapamos todo el ancho */
+    right: 0;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    /* lo alineamos al centro */
+    align-items: center;
+  
+    flex-wrap: wrap;
+  }
+  
+  /* logo */
+  .logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+  }
+  
+  .menu-icon {
+    display: none;
+    margin-right: 5%;
+  }
+  
+  /* todos los "ul" que esten dentro de "navigation" */
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navigation ul li {
+    /* uno al lado del otro */
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* los enlaces dentro del menu */
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+  
+  .navigation ul li a:hover {
+    background: #cc4444;
+  }
+  
+  .main {
+    padding-top: 12rem;
+  }
+
+
+
+  footer{
+    background: #202020;
+    color: white; 
+    position: absolute;
+    top:50rem;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+ 
+    
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;   
+}
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+.colum1{
+    max-width: 400px;
+}
+.colum1 h1{
+    font-size: 22px;
+}
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.colum2{
+    max-width: 400px;
+    
+}
+.colum2 h1{
+    font-size: 22px;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+.row img{
+    width: 36px;
+    height: 36px;
+}
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+.colum3{
+    max-width: 400px;
+}
+.colum3 h1{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+.copyright{
+    color: #C7C7C7;
+}
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+
+.contenedor {
+    top: 10rem;
+	width: 85%;
+	margin: 20px auto;
+	display: grid;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 8%;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "contenido contenido sidebar"
+}
+.contenedor h2{
+    font-size: 20px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.contenedor > div,
+.contenedor .contenido,
+.contenedor .sidebar{
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+.contenedor .contenido {
+	grid-area: contenido;
+}
+.contenedor .sidebar {
+
+	background: #fAA43D;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}

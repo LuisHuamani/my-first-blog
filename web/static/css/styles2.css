@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(161, 161, 161) 110%);
+}
+/* menu */
+header {
+    bottom: 87%;
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    margin-left: 0%;
+    position: fixed;
+    z-index: 9;
+}
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+  margin-left: 17%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+} 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #ad3e3e;
+}
+.contenido {
+    padding-top: 80px;
+  }
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+  }
+  .carrusel img{
+    margin-left: 30%;
+  }
+
+/* fin */
+
+/* Estilos barra plegable de contactos */
+.contactanos {
+    
+    width: 2.9rem;
+    height: 7.7rem;
+    background: #db0033;
+    /*background: #2EE3AD;*/
+    border-radius: 0.5rem 0  0 0.5rem;
+    position: fixed;
+    top: 40%;
+    right: 0%;
+
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    transition: right 0.7s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    z-index: 10;
+
+}
+
+.bdesplegable:checked ~ .contactanos {
+    right: 35%;
+    border-radius: 0.5rem 0  0 0.5rem;
+    background: linear-gradient(#ff8181,#ffafaf);   
+}
+.bdesplegable:checked ~ .panel {
+    right: 0;
+}
+.bdesplegable {
+    display: none;  
+}
+.panel {
+    width: 35%;
+    height: 100%;
+    /*safari*/
+    background:  -webkit-linear-gradient(#e92f5b,#f0c8d0,#d19ba7);
+    /*opera*/
+    background: -o-linear-gradient(#e92f5b,#f0c8d0,#d19ba7);
+    /*estandar*/
+    background: linear-gradient(#e92f2f,#f0c8c8,#d19b9b);
+    position: fixed;
+    top: 0;
+    right: -35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.7s;
+    padding: 0px 0;
+    z-index: 10;
+}
+.panel h1{
+	padding: 0px 0;
+	font-weight: 700;
+	text-align: center;
+	margin: -5px -5px 5px -5px;
+    font-size: 2.4em;
+	margin-bottom: 0px;
+    letter-spacing: 10px;
+    text-shadow: black 6px 6px 8px;
+    text-transform: uppercase;
+    color: black; 
+}
+.panel p{
+	padding: 0px 0;
+	font-weight: 200;
+    font-size: 1.4em;
+	margin-bottom: 0px;
+    letter-spacing: 1px;
+    text-shadow: gray -px 0;
+    text-transform: uppercase;
+}
+.panel input[type="text"],
+.panel input[type="date"],
+.panel input[type="datetime"],
+.panel input[type="email"],
+.panel input[type="number"],
+.panel input[type="search"],
+.panel input[type="time"],
+.panel input[type="url"],
+.panel textarea{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#000000;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 1px;
+    -webkit-appearance: none; 
+}
+.panel input[type="text"]:focus,
+.panel input[type="date"]:focus,
+.panel input[type="datetime"]:focus,
+.panel input[type="email"]:focus,
+.panel input[type="number"]:focus,
+.panel input[type="search"]:focus,
+.panel input[type="time"]:focus,
+.panel input[type="url"]:focus,
+.panel textarea:focus{
+	background: #d2d9dd;
+}
+.panel input[type="submit"],
+.panel input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 10px 30px 10px 30px;
+	color: rgb(0, 0, 0);
+	margin: 3 auto;
+	background: #f0c8d0;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #d19ba7;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+	font-weight: 700;
+    font-size: 1.4em;
+	margin-bottom: 0px;
+    font-family: 'PT Serif', serif;
+}
+.panel input[type="submit"]:hover,
+.panel input[type="button"]:hover
+{
+	background: #d492a1;
+}
